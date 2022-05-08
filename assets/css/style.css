@@ -1,0 +1,46 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("../images/ribbon.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+header {
+  background-color: rgba(102, 20, 202, 0.389);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+}
+header a {
+  text-decoration: none;
+}
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 20px;
+} 
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
