@@ -4,15 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.hero {
-  background-image: url("../images/ribbon.png");
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 500px;
+body{
+  height: 100%;
 }
-
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/ribbon.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  min-height: 500px;
+  background-position: center;
+}
 header {
   background-color: rgba(102, 20, 202, 0.389);
   display: flex;
