@@ -3,32 +3,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-  height: 100%;
-}
-.hero {
-  display: flex;
-  justify-content: center;
-  background-image: url("../images/ribbon.png");
-  background-repeat: no-repeat;
-  background-color: white;
-  min-height: 500px;
-  background-position: center;
-}
+
 header {
-  background-color: rgba(102, 20, 202, 0.389);
+  background-color: #1daad0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  width: 100%;
   padding: 20px 35px;
+  color: aliceblue;
+  font-size: 30px;
+  text-shadow: 1px 1px rgb(255, 49, 62);
 }
 header a {
   text-decoration: none;
+  color: aliceblue;
 }
 header nav ul li a {
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 26px;
 } 
 header nav {
   align-items: center;
@@ -40,10 +34,102 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}
 
+}
 header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.button-main {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 100%;
+  font-size: 30px;
+}
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+button {
+  text-shadow: 0 0 10px rgba(255, 49, 62, .90);
+  color: aliceblue;
+  display: flex;
+  border-radius: 100%;
+  border-color: #ff3e31;
+  padding: 60px;
+  font-size: 50px;
+  margin: 50px;
+  box-shadow: 0 0 10px rgba(255, 49, 62, .90);
+  background-image: radial-gradient(farthest-corner at 40px 40px,
+      #f35 0%, #43e 100%);
+}
+button::before {
+  font-display: hidden;
+}
+button:hover {
+  background: #1daad0;
+  font-display: visible;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+  
+    flex: 1 100%;
+    width: 100%;
+    
+  }
+  
+  
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex: 1 100%;
+  }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    flex: 1 100%;
+    
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
+}
+}}
