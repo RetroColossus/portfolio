@@ -5,24 +5,28 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-header {
+/* Portfolio Page */
+header, footer {
   background-color: #1daad0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 20px 35px;
   color: aliceblue;
   font-size: 30px;
   text-shadow: 1px 1px rgb(255, 49, 62);
+  margin: 0;
+  flex-wrap: wrap;
+  
 }
 header a {
   text-decoration: none;
   color: aliceblue;
+  
 }
 header nav ul li a {
   padding: 10px 15px;
   font-size: 26px;
+  
 } 
 header nav {
   align-items: center;
@@ -34,12 +38,14 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  width: 100%;
 
 }
 header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .button-main {
   display: flex;
@@ -48,26 +54,70 @@ header h1 {
   padding: 50px;
   border-radius: 100%;
   font-size: 30px;
+  width: 100%;
 }
 section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 img {
   display: flex;
-  justify-content: space-around;
-  margin: 100px 0;
+  justify-content: center;
+  margin: 100px 300px;
+  
 }
+/* BIO */
+.bio-image {
+  display: flex;
+  justify-content: center;
+  margin: 100px 300px 10px;
+  height: 300px;
+  width: 300px;
+
+}
+.bio-p{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin: 75px 300px 200px;
+  text-align: center;
+  width: 40%;
+  
+}
+.bio-h2, .portfolio-h2 {
+  font-size: 26px;
+  text-shadow: 1px 1px rgb(255, 49, 62);
+}
+/*Portfolio*/
+.portfolio-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.portfolio-image-meta{
+  display: flex;
+  justify-content: center;
+  
+  height: 300px;
+  width: 500px;
+}
+.portfolio-h2 {
+  margin: 100px 100px 10px ;
+}
+/*Button*/
 button {
   text-shadow: 0 0 10px rgba(255, 49, 62, .90);
   color: aliceblue;
   display: flex;
   border-radius: 100%;
   border-color: #ff3e31;
-  padding: 60px;
-  font-size: 50px;
-  margin: 50px;
+  padding: 40px;
+  font-size: 40px;
+  margin: 100px;
   box-shadow: 0 0 10px rgba(255, 49, 62, .90);
   background-image: radial-gradient(farthest-corner at 40px 40px,
       #f35 0%, #43e 100%);
@@ -79,57 +129,71 @@ button:hover {
   background: #1daad0;
   font-display: visible;
 }
+/*Footer*/
+footer {
+  font-size: 16px;
+  
+  margin: 0;
+  flex-wrap: wrap;
+  
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header {
-  
-    flex: 1 100%;
-    width: 100%;
-    
-  }
-  
-  
-
-
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
-  header {
-    flex: 1 100%;
-  }
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
 
   header {
     padding-bottom: 0;
     justify-content: center;
-    flex: 1 100%;
-    
   }
 
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
+  img {
     width: 100%;
+    margin: 100px 100px;
+    padding: 10px;
   }
 
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
+  header h1 {
+    width: 100%;
     text-align: center;
+    justify-content: center;
   }
 
-  .contact-info > * {
-    flex: 0 100%;
+  header nav ul {
+    margin: 20px;
   }
-  .contact-form {
-    order: 3;
+  button {
+    padding: 60px;
+    font-size: 20px;
+    margin: 50px;
   }
+    
 }
-}}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 30px 15px;
+  }
+  img {
+    width: 100%;
+    margin: 100px 100px;
+    padding: 20px;
+  }
+.bio-p {
+ width: 50%;
+}
+ 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  button {
+    padding: 50px;
+    font-size: 30px;
+    margin: 50px;
+  }
+   img {
+      width: 100%;
+      margin: 100px 100px;
+      padding: 10px;
+    }
+  
+}
+}
