@@ -95,7 +95,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   font-size: 40px;
-  margin: 30px;
+  margin: 50px auto 100px;
   text-shadow: 1px 1px #ff3e31;
   border-bottom: solid #1daad0;
 }
@@ -155,7 +155,6 @@ header, footer {
 header a {
   text-decoration: none;
   color: aliceblue;
-  
 }
 header nav ul li a {
   padding: 10px 15px;
@@ -185,24 +184,83 @@ section, .portfolio-image-section  {
   align-items: center;
   
   
-}
-img {
-  margin: 100px 0px 10px;
-  width: 80%;
-  height: 50%;
+}header, footer {
+  background-color: #1daad0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+  color: aliceblue;
+  font-size: 30px;
+  text-shadow: 1px 1px rgb(255, 49, 62);
+  margin: 0;
+  flex-wrap: wrap;
+ }
+ header {
+   position: sticky;
+   top: 0;
+ }
+header a {
+  text-decoration: none;
+  color: aliceblue;
   
 }
-h1{
-  margin: 10px;
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 26px;
+} 
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section, .portfolio-image-section  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ufo-image{
+  margin: 100px 0px 10px;
+  width: 50%;
+  height: 50%;
+}
+
+.ufo-h1{
+  margin: 10px auto 10px;
   font-size: 40px;
   margin: 30px;
   text-shadow: 1px 1px #ff3e31;
   
 }
-.ufo a{
-  margin: 10px;
+.ufo-a{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 200px;
   font-size: 20px;
   text-shadow: 1px 1px #ff3e31;
+  text-decoration: none;
+}
+.ufo {
+  display: flex;
+  justify-content: space-between;
+}
+.ufo a:hover {
+  text-shadow: 0px 0px 10px #ff3e31;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*Button*/
@@ -399,6 +457,11 @@ footer nav ul {
 .box-row-1{
   font-size: 30px;
 }
+.ufo-h1{
+  margin: 10px auto 10px;
+  font-size: 30px;
+  margin: 30px;
+  text-shadow: 1px 1px #ff3e31;
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -438,5 +501,12 @@ footer nav ul {
     margin-bottom: 20px;
   }
   
+}
+ufo-h1{
+  margin: 10px auto 10px;
+  font-size: 30px;
+  margin: 30px;
+  text-shadow: 1px 1px #ff3e31;
+}
 }
 
