@@ -21,7 +21,7 @@
    * used developer tools for "what ifs"
 
    ## Image of Project:
-   ![screenshot of portfolio project](https://github.com/RetroColossus/portfolio/blob/main/portfolio.html)
+   ![screenshot of portfolio project](https://github.com/RetroColossus/portfolio/blob/main/assets/images/portfolio%20preview.JPG)
 
    ## Project Link:
 
