@@ -104,6 +104,8 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap; 
+  margin-bottom: 50px;
+  
 }
 
 .portfolio-image-meta{
@@ -129,6 +131,9 @@ section h2 a{
   color: rgb(177, 35, 35);
   background: #ff3e31;
   box-shadow: 0px 0px 10px #ff3e31;
+}
+footer{
+  margin-top: 80px;
 }
 /*Button*/
 
@@ -169,26 +174,11 @@ button {
       #f35 0%, #43e 100%);
 }
 /*Footer*/
-footer {
-  display: flex;
-  font-size: 16px;
-  margin: 85px 0 0;
-  flex-wrap: wrap;
-}
-footer nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 50px;
-}
-footer nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  
-  
+
+footer{
+  margin-top: 60px;
+  bottom: 0;
+  width: 100%
 }
 footer a {
   text-decoration: none;
@@ -196,10 +186,27 @@ footer a {
   
 }
 footer nav ul li a {
-  padding: 6px 8px;
+  padding: 10px 15px;
   font-size: 16px;
+} 
+footer nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -274,17 +281,12 @@ footer {
   padding-bottom: 0;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
 }
-
-
-footer h1 {
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-}
-
 
 footer nav ul {
+  display: flex;
+  flex-direction: reverse;
   margin: 20px;
 }
 }
@@ -362,5 +364,9 @@ footer nav ul {
     margin: 50px 10px 60px;
     font-size: 20px;
   }
+  footer div {
+    margin-bottom: 20px;
+  }
+  
 }
 
