@@ -1,14 +1,13 @@
 # Porfolio Project
 
-  ### This is a starter portfolio project where I experimented with Flexbox, Media Queries, and Google console
+  ### This is a starter portfolio project where I experimented with Flexbox, Media Queries, and Google Developer Tools
 
   ## Code used: HTLM and CSS
 
   ## Experimented with Flexbox
 
    * used Flexbox in containers and container-items
-   * adjust flexbox for media queries
-   * improved readability for screen reader
+   * adjusted flexbox for media queries
 
   ## Experimented with Media Queries
 
@@ -22,7 +21,7 @@
    * used developer tools for "what ifs"
 
    ## Image of Project:
-   ![screenshot of project code refactor](https://github.com/RetroColossus/
+   ![screenshot of portfolio project]https://github.com/RetroColossus/portfolio/blob/main/portfolio.html
 
    ## Project Link:
 
