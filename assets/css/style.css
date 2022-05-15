@@ -244,7 +244,7 @@ section, .portfolio-image-section  {
   text-shadow: 1px 1px #ff3e31;
   
 }
-.ufo-a a {
+.ufo-a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -453,8 +453,6 @@ footer nav ul {
   height: 200px;
   width: 400px;
   padding: 0px;
-  
-  
 }
 .box-row-1{
   font-size: 30px;
